@@ -1,0 +1,109 @@
+:root {
+    --color-white: #c3d2d2;
+    --color-black: #1A292A;
+    --color-red: #8e331f;
+    --color-gray: #567072;
+    --color-yellow: #f7b538;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Raleway", sans-serif;
+}
+.main-login {
+    width: 100vw;  
+    height: 100vh;
+    background: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login h1 {
+    background: var(--color-yellow);
+    color: var(--color-red);
+    position: absolute;
+    padding: 20px;
+    font-size: 40px;
+    z-index: 1;
+}
+
+.right-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: var(--color-gray);
+}
+.card-login  h1 {
+    color: var(--color-white);
+    font-family: "Krona One", sans-serif;
+    font-size: 50px;
+}
+
+.textfild {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfild input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--color-white);
+    color: var(--color-gray);
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfild label {
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+.textfild input::placeholder {
+    color: var(--color-black);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px 0px;
+    margin: 20px 40px 5px 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    background: var(--color-red);
+    color: var(--color-yellow);
+    cursor: pointer;
+    transition: all .7s ease 0s;
+}
+.btn-login:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-red);
+  }
